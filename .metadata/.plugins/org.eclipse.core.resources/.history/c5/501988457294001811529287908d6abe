@@ -1,0 +1,15 @@
+import java.util.Scanner;;
+
+public class bookBySeat(int [][] seats, Scanner input) {
+boolean booked =false;
+int row=0;
+int col=0;
+int totalPrice = 0;
+do{
+	row=0;
+	col=0;
+	System.out.println("Please enter a row number 1-9");
+	row = input.nextInt()-1;
+	S
+}
+}

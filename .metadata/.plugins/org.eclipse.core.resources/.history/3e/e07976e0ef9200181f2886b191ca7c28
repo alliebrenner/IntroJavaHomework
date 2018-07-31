@@ -1,0 +1,30 @@
+package ch8Taxes;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class PaycheckTester {
+	public static void main(String[]args){
+		int numStudents=5;
+		Scanner input=new Scanner(System.in);
+		ArrayList payList = new ArrayList(numStudents);
+		for (int index =0; index <numStudents; index++){
+			System.out.println("Enter Name of the "+"Student:");
+			String name = input.next();
+			System.out.println("Enter wage per hour :"+" ");
+			double wage = input.nextDouble();
+			System.out.println("Enter number of"+ "hours worked:");
+			int hours = input.nextInt();
+			Paycheck student = new Paycheck(name,wage,hours);
+			payList.add(student);
+		}
+		printPayChecks(payList);
+	}
+	public static void printPayChecks(ArrayList studentList){
+			System.out.println("NAME-WAGE-Total"+".HOURS-PAYCHECK");
+			for (int index =0; index <studentList.size();index++){
+				System.out.println(studentList.get(index));
+			}
+				
+	}
+
+}
