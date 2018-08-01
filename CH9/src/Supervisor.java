@@ -7,9 +7,14 @@
 		
 		super(employeeName,currentSalary);
 		this.bonus_amount=bonus_amount;
+		
+		
 		}
 		public double raiseSalary(){
-			 new_total= getSalary() + (getSalary() *bonus_amount/100);
+			
+			new_total= (current_salary + (current_salary *bonus_amount/100));
+			System.out.println((getSalary()+bonus_amount));
+
 			return new_total;
 		}
 	
