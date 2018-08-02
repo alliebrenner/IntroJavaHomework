@@ -7,7 +7,7 @@ private double percentIncrease;
 
 public Employee(String employeeName, double currentSalary){
 	employee_name=employeeName;
-	employee_salary=currentSalary;
+	employee_salary=currentSalary;k
 }
 public String getName(){
 	return employee_name;

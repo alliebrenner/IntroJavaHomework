@@ -1,0 +1,9 @@
+package ch10;
+
+public class car {
+
+	public car() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
