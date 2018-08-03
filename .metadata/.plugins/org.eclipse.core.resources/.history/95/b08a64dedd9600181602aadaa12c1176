@@ -16,8 +16,7 @@ public double getSalary(){
 	return employee_salary;
 }
 public void raiseSalary(double byPercent)
-{
-	double raise = employee_salary * byPercent / 100;
+{double raise = employee_salary * byPercent / 100;
  employee_salary += raise;}
 
  }

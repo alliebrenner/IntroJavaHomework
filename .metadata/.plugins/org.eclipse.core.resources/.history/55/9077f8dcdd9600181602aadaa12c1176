@@ -1,0 +1,44 @@
+
+ class Supervisor extends Employee{
+	
+	private double bonus_amount;
+	public Supervisor(String employeeName, double currentSalary) {
+		
+		super(employeeName,currentSalary);
+		bonus_amount=0;			
+		}
+	
+		public double getSalary(){
+			double starting_salary = super.getSalary();
+			return starting_salary +bonus_amount;
+		}
+		public void raiseSalary(double bonus ){
+			bonus_amount = bonus;
+		
+		}
+	
+	}class Manager extends Employee
+ 67. {
+		75.    public Manager(String n, double s, int year, int month, int day)
+		76.    {
+		77.       super(n, s, year, month, day);
+		78.       bonus = 0;
+		79.    }
+		80.
+		81.    public double getSalary()
+		82.    {
+		83.       double baseSalary = super.getSalary();
+		84.       return baseSalary + bonus;
+		85.    }
+		86.
+		87.    public void setBonus(double b)
+		88.    {
+		89.       bonus = b;
+		90.    }
+		91.
+		92.    private double bonus;
+		93. }
+ 
+ 
+
+

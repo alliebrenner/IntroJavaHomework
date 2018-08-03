@@ -2,7 +2,7 @@
  class Supervisor extends Employee{
 	
 	private double bonus_amount;
-	public Supervisor(String employeeName, double currentSalary) {
+	public Supervisor(double bonusAmount,String employeeName, double currentSalary) {
 		
 		super(employeeName,currentSalary);
 		bonus_amount=0;			
@@ -18,3 +18,6 @@
 		}
 	
 	}
+ 
+
+

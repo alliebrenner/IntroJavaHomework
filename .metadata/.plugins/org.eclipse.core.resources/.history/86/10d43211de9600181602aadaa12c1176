@@ -7,11 +7,11 @@ public class EmployeeTester {
 		
 		Employee [] staff = new Employee[3];
 		staff[0]=test;
-		staff[1]=new Employee("Harry",7000);
-		staff[2]=new Employee("Mary",1000);
+		staff[1]=new Employee("Harry ",7000);
+		staff[2]=new Employee("Mary ",1000);
 		
 		for (Employee emp :staff)
-			System.out.println("name= " + emp.getName() +",salary= " + emp.getSalary());
+			System.out.println("name= " + emp.getName() + ",salary= " + emp.getSalary());
 		
 		
 	}
