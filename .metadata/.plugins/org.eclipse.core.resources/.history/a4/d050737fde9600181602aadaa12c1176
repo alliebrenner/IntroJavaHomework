@@ -35,7 +35,7 @@ public class TheaterSeating {
 		   			for(int j=0;j<9;j++){
 		   				System.out.print(" "+seats[i][j]);
 		   			}
-		   				System.out.println("");
+		   				System.out.print("");
 		   				
 		   			}
 		       }

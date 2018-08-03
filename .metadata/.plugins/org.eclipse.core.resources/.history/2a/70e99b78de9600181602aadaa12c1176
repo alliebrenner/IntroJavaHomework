@@ -33,7 +33,7 @@ public class TheaterSeating {
 		           System.out.println("Your seat has been reserved and shows a 0 on the chart now.");
 		           for (int i =0;i<8;i++){
 		   			for(int j=0;j<9;j++){
-		   				System.out.print(" "+seats[i][j]);
+		   				System.out.println(" "+seats[i][j]);
 		   			}
 		   				System.out.println("");
 		   				
