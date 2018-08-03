@@ -15,7 +15,7 @@ public class computeTaxes {
 		if (income <=8000){
 			income_tax = (10*income)/100;
 		}
-		else if(income>8000 &&income <=32000){
+		else if(income>8000 &&income <=3200){
 			income_tax = 800+(15*(income-8000))/100;
 		}
 		else{
