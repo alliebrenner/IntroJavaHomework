@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class TheaterSeating {
+	public static void main(String[]args){
+		int[][]seats={
+				{10,10,10,10,10,10,10,10,10,10},
+				{10,10,10,10,10,10,10,10,10,10},
+				{10,10,10,10,10,10,10,10,10,10},
+				{10,10,20,20,20,20,20,20,10,10},
+				{10,10,20,20,20,20,20,20,10,10},
+				{10,10,20,20,20,20,20,20,10,10},
+				{20,20,30,30,40,40,30,30,20,20},
+				{30,40,50,50,50,50,50,50,40,30}};
+		
+		/*for (int i =0;i<8;i++){
+			for(int j=0;j<9;j++){
+				System.out.println(" "+seats[i][j]);
+			}
+				System.out.println("");
+		}*/
+		
+			boolean seatSold = false;
+			while (!seatSold){
+			Scanner input = new Scanner(System.in);
+			System.out.println("Buying theater tickets:");
+			System.out.println("Please choose a row");
+			int row = input.nextInt();
+			System.out.println("Please choose a column");
+			int col = input.nextInt();
+			
+			 if (seats[row][col]!=0)
+		       {
+		           seats[row][col] = 0;
+		           System.out.println("Your seat has been reserved and shows a 0 on the chart now.");
+		           for (int i =0;i<8;i++){
+		   			for(int j=0;j<9;j++){
+		   				System.out.print(" "+seats[i][j]);
+		   			}
+		   				System.out.println("");
+		   				
+		   			}
+		           System.out.println("Would you like to buy another ticket?");
+		           String exit = input.nextLine();
+		           if (exit.equals("yes"))
+		        	   break;
+		           
+		        	   
+		       }
+		       else { System.out.println("Sorry, that seat is already taken.");
+		       ///seatSold =true;
+		       
+		       }	
+			 
+		   }
+			
+		}
+	}	
+

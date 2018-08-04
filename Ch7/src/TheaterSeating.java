@@ -26,24 +26,29 @@ public class TheaterSeating {
 			int row = input.nextInt();
 			System.out.println("Please choose a column");
 			int col = input.nextInt();
-			
 			 if (seats[row][col]!=0)
-		       {
-		           seats[row][col] = 0;
+		       {seats[row][col] = 0;
 		           System.out.println("Your seat has been reserved and shows a 0 on the chart now.");
 		           for (int i =0;i<8;i++){
 		   			for(int j=0;j<9;j++){
-		   				System.out.print(" "+seats[i][j]);
-		   			}
+		   				System.out.print(" "+seats[i][j]);}
 		   				System.out.println("");
-		   				
-		   			}
-		       }
+		   				seatSold=true;
+		   				}
+		           System.out.println("Would you like to purchase another ticket?");
+		           String moreTkts = input.next();
+		           if (moreTkts.equals("yes"))
+		        	   seatSold=false;
+		           else if(moreTkts.equals("no"))
+		        	   System.out.println("Thank you for purchasing tickets");
+		           }
+			
 		       else { System.out.println("Sorry, that seat is already taken.");
 		       ///seatSold =true;
-		       
 		       }	
+			 
 		   }
+			
 			
 		}
 	}	
